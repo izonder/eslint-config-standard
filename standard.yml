@@ -1,0 +1,129 @@
+---
+parser: babel-eslint
+env:
+  node: true
+extends:
+- walmart/configurations/es6-node
+parserOptions:
+  sourceType: module
+plugins:
+- filenames
+- no-useless-assign
+- jsdoc
+settings:
+  jsdoc:
+    tagNamePreference:
+      param: param
+      returns: returns
+rules:
+  # additional rules
+  strict:
+  - 2
+  - never
+  indent:
+  - 2
+  - 4
+  - SwitchCase: 1
+  linebreak-style:
+  - 2
+  - unix
+  semi:
+  - 2
+  - always
+  no-multiple-empty-lines:
+  - 2
+  - max: 1
+    maxBOF: 0
+    maxEOF: 1
+  guard-for-in: 2
+  space-infix-ops: 2
+  no-unneeded-ternary: 2
+  object-curly-spacing: 2
+  array-bracket-spacing: 2
+  comma-spacing: 2
+  no-return-await: 2
+  # todo: add rule for spacing between class methods (https://github.com/eslint/eslint/issues/7356)
+  filenames/match-regex:
+  - 2
+  - "^[a-z-.]+$" # allows only kebab-like-names and names.with.parts, disallows PascalCase/camelCase and snake_case
+  filenames/match-exported: 0
+  filenames/no-index: 0
+  no-useless-assign/no-useless-assign: 2
+
+  # jsdoc
+  require-jsdoc:
+  - 2
+  - require:
+      FunctionDeclaration: true
+      MethodDefinition: true
+      ClassDeclaration: false
+  valid-jsdoc:
+  - 2
+  - requireReturn: false
+    requireReturnType: true
+    requireParamDescription: false
+    requireReturnDescription: false
+    prefer:
+      arg: param
+      argument: param
+      return: returns
+  jsdoc/check-param-names: 2
+  jsdoc/check-tag-names: 2
+  jsdoc/check-types: 2
+  jsdoc/require-hyphen-before-param-description: 2
+  jsdoc/require-param: 2
+  jsdoc/require-returns-type: 2
+
+  # overridden
+  max-len:
+  - 2
+  - code: 128
+    ignoreTrailingComments: true
+  max-statements:
+  - 2
+  - 20
+  max-params:
+  - 2
+  - 5
+  comma-dangle:
+  - 2
+  - never
+  no-cond-assign:
+  - 2
+  - always
+  quotes:
+  - 2
+  - single
+  one-var:
+  - 2
+  - always
+  no-magic-numbers:
+  - 2
+  - ignore:
+    - 0
+    - 1
+    - 100
+    - 1000
+    ignoreArrayIndexes: true
+  dot-notation:
+  - 2
+  - allowPattern: "^([a-z]+(_[a-z]+)+|[_A-Z0-9]+)$"
+  no-trailing-spaces:
+  - 2
+  - skipBlankLines: true
+  no-multi-spaces:
+  - 2
+  - exceptions:
+      VariableDeclarator: true
+  key-spacing:
+  - 2
+  - mode: minimum
+  curly:
+  - 2
+  - multi-line
+  brace-style:
+  - 2
+  - stroustrup
+
+  # disable
+  prefer-const: 0
