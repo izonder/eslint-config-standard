@@ -9,7 +9,7 @@
     "npm": ">=3.10.3"
   },
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint . && node ./test/test.js"
   },
   "dependencies": {
     "babel-eslint": "^7.1.1",
