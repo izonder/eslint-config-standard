@@ -45,7 +45,7 @@ rules:
   # todo: add rule for spacing between class methods (https://github.com/eslint/eslint/issues/7356)
   filenames/match-regex:
   - 2
-  - "^[a-z-.]+$" # allows only kebab-like-names and names.with.parts, disallows PascalCase/camelCase and snake_case
+  - "^[a-z0-9-.]+$" # allows only kebab-like-names and names.with.parts, disallows PascalCase/camelCase and snake_case
   filenames/match-exported: 0
   filenames/no-index: 0
   no-useless-assign/no-useless-assign: 2
