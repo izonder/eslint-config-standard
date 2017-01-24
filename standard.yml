@@ -107,7 +107,7 @@ rules:
     ignoreArrayIndexes: true
   dot-notation:
   - 2
-  - allowPattern: "^([a-z]+(_[a-z]+)+|[_A-Z0-9]+)$"
+  - allowPattern: "^([a-z]+(_[a-z]+)+|[_A-Z0-9]+)$" #allows keys (e.g): under_score, UPPERCASE, 123, _0
   no-trailing-spaces:
   - 2
   - skipBlankLines: true
