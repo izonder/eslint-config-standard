@@ -79,6 +79,9 @@ rules:
   - 2
   - code: 128
     ignoreTrailingComments: true
+  complexity:
+  - 2
+  - 20
   max-statements:
   - 2
   - 20
