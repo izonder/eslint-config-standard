@@ -4,12 +4,22 @@ env:
   node: true
 extends:
 - walmart/configurations/es6-node
+globals:
+  # global objects of mocha
+  after: true
+  afterEach: true
+  before: true
+  beforeEach: true
+  describe: true
+  it: true
+  xit: true
 parserOptions:
   sourceType: module
 plugins:
 - filenames
 - no-useless-assign
 - jsdoc
+- mocha
 settings:
   jsdoc:
     tagNamePreference:
@@ -73,6 +83,19 @@ rules:
   jsdoc/require-hyphen-before-param-description: 2
   jsdoc/require-param: 2
   jsdoc/require-returns-type: 2
+
+  # mocha
+  mocha/no-exclusive-tests: 2
+  mocha/no-skipped-tests: 2
+  mocha/no-pending-tests: 1
+  mocha/no-global-tests: 2
+  mocha/no-return-and-callback: 2
+  mocha/no-sibling-hooks: 2
+  mocha/no-mocha-arrows: 2
+  mocha/no-hooks-for-single-case: 1
+  mocha/no-top-level-hooks: 2
+  mocha/no-identical-title: 2
+  mocha/no-nested-tests: 2
 
   # overridden
   max-len:
