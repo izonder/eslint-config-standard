@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-standard",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Standard set of ESLint rules",
   "private": true,
   "license": "MIT",
@@ -15,7 +15,8 @@
     "babel-eslint": "^7.1.1",
     "eslint-config-walmart": "^1.1.0",
     "eslint-plugin-filenames": "^1.1.0",
-    "eslint-plugin-jsdoc": "^3.0.2",
+    "eslint-plugin-jsdoc": "^2.4.0",
+    "eslint-plugin-mocha": "^4.9.0",
     "eslint-plugin-no-useless-assign": "^1.0.2",
     "js-yaml": "^3.7.0"
   },
