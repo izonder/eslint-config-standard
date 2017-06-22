@@ -11,6 +11,9 @@
   "scripts": {
     "test": "eslint . && node ./test/test.js"
   },
+  "bin": {
+    "eslint": "./node_modules/.bin/eslint"
+  },
   "dependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": "^3.19.0",
