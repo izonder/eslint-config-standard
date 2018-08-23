@@ -33,6 +33,8 @@ settings:
     tagNamePreference:
       param: param
       returns: returns
+  react:
+    version: 16.4
 rules:
   # additional rules
   array-bracket-spacing: 2
