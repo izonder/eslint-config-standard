@@ -1,0 +1,42 @@
+---
+parser: babel-eslint
+env:
+  node: true
+  browser: true
+extends:
+  - plugin:react/recommended
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+plugins:
+  - react
+settings:
+  react:
+    version: '16.4'
+rules:
+  # react
+  react/display-name: 0
+  react/jsx-boolean-value: 0
+  react/jsx-closing-bracket-location: 2
+  react/jsx-curly-spacing:
+    - 2
+    - never
+  react/jsx-handler-names: 2
+  react/jsx-indent:
+    - 2
+    - 4
+  react/jsx-indent-props:
+    - 2
+    - 4
+  react/jsx-max-props-per-line:
+    - 2
+    - maximum: 3
+  react/jsx-pascal-case: 2
+  react/jsx-wrap-multilines: 2
+  react/no-danger: 2
+  react/no-multi-comp: 2
+  react/prefer-es6-class: 2
+  react/self-closing-comp:
+    - 2
+    - component: true
+      html: false

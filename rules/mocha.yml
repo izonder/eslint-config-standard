@@ -1,0 +1,24 @@
+---
+globals:
+  # global objects of mocha
+  after: true
+  afterEach: true
+  before: true
+  beforeEach: true
+  describe: true
+  it: true
+  xit: true
+plugins:
+  - mocha
+rules:
+  mocha/no-exclusive-tests: 2
+  mocha/no-global-tests: 2
+  mocha/no-hooks-for-single-case: 1
+  mocha/no-identical-title: 2
+  mocha/no-mocha-arrows: 2
+  mocha/no-nested-tests: 2
+  mocha/no-pending-tests: 1
+  mocha/no-return-and-callback: 2
+  mocha/no-sibling-hooks: 2
+  mocha/no-skipped-tests: 2
+  mocha/no-top-level-hooks: 2

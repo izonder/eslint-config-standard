@@ -1,0 +1,31 @@
+---
+plugins:
+  - jsdoc
+settings:
+  jsdoc:
+    tagNamePreference:
+      param: param
+      returns: returns
+rules:
+  jsdoc/check-param-names: 2
+  jsdoc/check-tag-names: 2
+  jsdoc/check-types: 2
+  jsdoc/require-hyphen-before-param-description: 2
+  jsdoc/require-param: 2
+  jsdoc/require-returns-type: 2
+  require-jsdoc:
+    - 2
+    - require:
+        FunctionDeclaration: true
+        MethodDefinition: true
+        ClassDeclaration: false
+  valid-jsdoc:
+    - 2
+    - requireReturn: false
+      requireReturnType: true
+      requireParamDescription: false
+      requireReturnDescription: false
+      prefer:
+        arg: param
+        argument: param
+        return: returns

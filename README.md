@@ -1,6 +1,12 @@
 # eslint-config-standard
 Standard set of ESLint rules
 
+NOTE! There are split rules:
+- base.yml
+- jsdoc.yml
+- mocha.yml
+- react.yml
+
 ### installation
 ```
 npm i --save-dev izonder/eslint-config-standard
@@ -20,4 +26,16 @@ Just add `.eslintrc` file:
 root: true
 extends:
 - standard
+```
+
+In order to use config rules separately:
+
+```
+---
+root: true
+extends:
+- standard/rules/base.yml
+- standard/rules/jsdoc.yml
+- standard/rules/mocha.yml
+- standard/rules/react.yml
 ```
