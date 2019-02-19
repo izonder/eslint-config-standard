@@ -1,13 +1,4 @@
 ---
-globals:
-  # global objects of mocha
-  after: true
-  afterEach: true
-  before: true
-  beforeEach: true
-  describe: true
-  it: true
-  xit: true
 plugins:
   - mocha
 rules:

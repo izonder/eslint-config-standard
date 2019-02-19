@@ -4,3 +4,4 @@ extends:
   - './rules/jsdoc.yml'
   - './rules/mocha.yml'
   - './rules/react.yml'
+  - './rules/test.yml'

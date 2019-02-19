@@ -1,0 +1,10 @@
+---
+globals:
+  # global objects for test libraries, e.g. mocha, jest
+  after: true
+  afterEach: true
+  before: true
+  beforeEach: true
+  describe: true
+  it: true
+  xit: true

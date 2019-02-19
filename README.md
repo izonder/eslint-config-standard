@@ -6,6 +6,7 @@ NOTE! There are split rules:
 - jsdoc.yml
 - mocha.yml
 - react.yml
+- test.yml
 
 ### installation
 ```
@@ -38,4 +39,5 @@ extends:
 - standard/rules/jsdoc.yml
 - standard/rules/mocha.yml
 - standard/rules/react.yml
+- standard/rules/test.yml
 ```
