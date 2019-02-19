@@ -12,6 +12,7 @@ parserOptions:
     globalReturn: true
     impliedStrict: false
 plugins:
+  - babel
   - filenames
   - no-useless-assign
 rules:
@@ -123,3 +124,7 @@ rules:
   # disable
   no-mixed-requires: 0
   prefer-const: 0
+
+  # https://github.com/eslint/eslint/issues/7565
+  no-invalid-this: 0
+  babel/no-invalid-this: 2
