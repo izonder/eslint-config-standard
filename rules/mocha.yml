@@ -6,7 +6,7 @@ rules:
   mocha/no-global-tests: 2
   mocha/no-hooks-for-single-case: 1
   mocha/no-identical-title: 2
-  mocha/no-mocha-arrows: 0 # due to conflict with prefer-arrow-callback
+  mocha/no-mocha-arrows: 1 # due to conflict with prefer-arrow-callback
   mocha/no-nested-tests: 2
   mocha/no-pending-tests: 1
   mocha/no-return-and-callback: 2
