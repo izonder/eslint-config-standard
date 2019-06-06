@@ -9,7 +9,9 @@ settings:
 rules:
   jsdoc/check-param-names: 2
   jsdoc/check-tag-names: 2
-  jsdoc/check-types: 2
+  jsdoc/check-types:
+    - 2
+    - noDefaults: true
   jsdoc/require-hyphen-before-param-description: 2
   jsdoc/require-param: 2
   jsdoc/require-returns-type: 2
