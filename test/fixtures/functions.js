@@ -35,6 +35,8 @@ class Test {
     /**
      * Method description
      * @returns {Promise<boolean>}
+     *
+     * @swagger
      */
     async method() {
         this.bar = await bar();

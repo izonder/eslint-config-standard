@@ -8,7 +8,10 @@ settings:
       returns: returns
 rules:
   jsdoc/check-param-names: 2
-  jsdoc/check-tag-names: 2
+  jsdoc/check-tag-names:
+    - 2
+    - definedTags:
+        - swagger
   jsdoc/check-types:
     - 2
     - noDefaults: true
