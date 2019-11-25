@@ -30,6 +30,8 @@ class Test {
         this.foo = foo();
         this.baz = baz(...arguments);
         this.logger = log();
+
+        this.foo?.();
     }
 
     /**

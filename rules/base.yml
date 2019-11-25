@@ -128,3 +128,7 @@ rules:
   # https://github.com/eslint/eslint/issues/7565
   no-invalid-this: 0
   babel/no-invalid-this: 2
+
+  # https://github.com/eslint/eslint/issues/10939
+  no-unused-expressions: 0
+  babel/no-unused-expressions: 2
