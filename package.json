@@ -9,7 +9,9 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "yarn lint && mocha -r chai/register-expect"
+    "test": "yarn lint && mocha -r chai/register-expect",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "bin": {
     "eslint": "./node_modules/.bin/eslint"
@@ -24,7 +26,8 @@
     "eslint-plugin-mocha": "^6.3.0",
     "eslint-plugin-no-useless-assign": "^1.0.2",
     "eslint-plugin-react": "^7.19.0",
-    "js-yaml": "^3.13.1"
+    "js-yaml": "^3.13.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
@@ -36,5 +39,6 @@
     "hooks": {
       "pre-commit": "yarn test"
     }
-  }
+  },
+  "snyk": true
 }
