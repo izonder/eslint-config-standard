@@ -29,9 +29,12 @@ class Test {
     constructor() {
         this.foo = foo();
         this.baz = baz(...arguments);
+        this.bar = new Map();
         this.logger = log();
 
         this.foo?.();
+        this.bar.get('something')?.check();
+        this.bar.get('something')?.test?.();
     }
 
     /**
