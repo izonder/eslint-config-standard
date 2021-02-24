@@ -1,0 +1,15 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        },
+        "modules": "commonjs",
+        "useBuiltIns": false,
+        "debug": false
+      }
+    ]
+  ]
+}
