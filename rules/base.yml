@@ -7,10 +7,9 @@ extends:
   - walmart/configurations/es6-node
 parserOptions:
   sourceType: module
-  ecmaVersion: 9
-  ecmaFeatures:
-    globalReturn: true
-    impliedStrict: false
+  babelOptions:
+    root: ./node_modules/eslint-config-standard
+    rootMode: upward-optional
 plugins:
   - babel
   - filenames
