@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-standard",
-  "version": "3.9.0",
+  "version": "3.10.0",
   "description": "Standard set of ESLint rules",
   "private": true,
   "license": "MIT",
