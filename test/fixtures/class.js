@@ -23,8 +23,10 @@ class TestClass extends BaseClass {
             'foo-bar': [
                 'foo',
                 'bar'
-            ]
+            ],
+            callback: ::this.invokeMethod
         };
+
         this.testMethod(this.config);
     }
 
@@ -34,7 +36,7 @@ class TestClass extends BaseClass {
      * @returns {*}
      */
     async testMethod(opts) {
-        const {foo, bar} = this.opts || opts;
+        const {foo, bar} = this.opts ?? opts;
 
         return this.invokeMethod(foo, bar);
     }
@@ -46,7 +48,7 @@ class TestClass extends BaseClass {
      * @returns {{foo, bar, baz}}
      */
     async invokeMethod(foo, bar) {
-        return {foo, bar, baz: this.config['foo-bar']};
+        return {foo, bar, baz: this.config?.['foo-bar']};
     }
 }
 
