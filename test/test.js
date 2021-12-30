@@ -1,18 +1,18 @@
-const {CLIEngine} = require('eslint'),
+const {ESLint} = require('eslint'),
     fs = require('fs'),
     path = require('path');
 
 describe('lint examples', () => {
     const fixturesPath = path.resolve(__dirname, 'fixtures'),
         fixtures = fs.readdirSync(fixturesPath),
-        eslint = new CLIEngine();
+        eslint = new ESLint();
 
     for (const file of fixtures) {
-        it(file, () => {
+        it(file, async () => {
             const sourceCode = fs.readFileSync(path.resolve(fixturesPath, file), {encoding: 'utf-8'}),
-                {errorCount} = eslint.executeOnText(sourceCode);
+                [result] = await eslint.lintText(sourceCode);
 
-            expect(errorCount).to.be.equal(0);
+            expect(result.errorCount).to.be.equal(0);
         });
     }
 });
