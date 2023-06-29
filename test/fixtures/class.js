@@ -32,7 +32,7 @@ class TestClass extends BaseClass {
 
     /**
      * Test method
-     * @param {Object} opts
+     * @param {object} opts
      * @returns {*}
      */
     async testMethod(opts) {

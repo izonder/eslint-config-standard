@@ -1,6 +1,7 @@
 const {ESLint} = require('eslint'),
     fs = require('fs'),
-    path = require('path');
+    path = require('path'),
+    expect = require('chai').expect;
 
 describe('lint examples', () => {
     const fixturesPath = path.resolve(__dirname, 'fixtures'),
