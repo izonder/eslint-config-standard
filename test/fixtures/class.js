@@ -24,7 +24,7 @@ class TestClass extends BaseClass {
                 'foo',
                 'bar'
             ],
-            callback: ::this.invokeMethod
+            callback: this.invokeMethod.bind(this) // NOTE: the shortening :: is deprecated
         };
 
         this.testMethod(this.config);
