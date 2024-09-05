@@ -16,7 +16,7 @@
     "eslint": "./node_modules/.bin/eslint"
   },
   "dependencies": {
-    "@babel/core": "^7.16.5",
+    "@babel/core": "^7.23.2",
     "@babel/eslint-parser": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "eslint": "8.43.0",
